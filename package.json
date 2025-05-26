@@ -7,25 +7,20 @@
   "scripts": {
     "dev": "nx run-many -t serve"
   },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
   "devDependencies": {
-    "@nx/js": "^19.8.14",
-    "@nx/node": "^19.8.14",
     "@nx/react": "^19.8.14",
     "@nx/vite": "^19.8.14",
-    "@nx/web": "^19.8.14",
-    "@nx/webpack": "^19.8.14",
-    "@nx/workspace": "^19.8.14",
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
-    "@vitejs/plugin-react": "^4.4.1",
+    "@vitejs/plugin-react": "^4.5.0",
     "nx": "^19.8.14",
     "typescript": "~5.8.3",
     "vite": "^6.3.5",
     "vitest": "^3.1.4"
-  },
-  "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
   },
   "engines": {
     "node": ">=22.13.1"
