@@ -1,7 +1,5 @@
 /// <reference types='vitest' />
 
-import { lingui } from "@lingui/vite-plugin";
-import { nxViteTsPaths } from "@nx/vite/plugins/nx-tsconfig-paths.plugin";
 import react from "@vitejs/plugin-react";
 import { defineConfig, searchForWorkspaceRoot } from "vite";
 
@@ -32,20 +30,8 @@ export default defineConfig({
   },
 
   plugins: [
-    react({
-      babel: {
-        plugins: ["macros"],
-      },
-    }),
-    lingui(),
-    nxViteTsPaths(),
+    react(),
   ],
-
-  test: {
-    globals: true,
-    environment: "jsdom",
-    include: ["src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
-  },
 
   resolve: {
     alias: {
