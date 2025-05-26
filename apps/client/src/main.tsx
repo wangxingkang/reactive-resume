@@ -1,11 +1,9 @@
-import { StrictMode } from "react";
-import * as ReactDOM from "react-dom/client";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App.tsx';
 
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-const root = ReactDOM.createRoot(document.querySelector("#root")!);
-
-root.render(
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div>Hello World</div>
+    <App />
   </StrictMode>,
-);
+)

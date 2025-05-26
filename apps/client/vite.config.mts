@@ -17,7 +17,7 @@ export default defineConfig({
 
   server: {
     host: true,
-    port: 5173,
+    port: 8888,
     fs: { allow: [searchForWorkspaceRoot(process.cwd())] },
   },
 
