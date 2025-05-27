@@ -13,6 +13,10 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: apps/client/src/routes/auth/_layout.tsx:31
+msgid "Photograph by Patrick Tomasso"
+msgstr "Photograph by Patrick Tomasso"
+
 #: apps/client/src/routes/auth/-views/login/index.tsx:9
 msgid "Sign in to your account"
 msgstr "Sign in to your account"
