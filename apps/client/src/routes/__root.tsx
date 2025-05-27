@@ -1,4 +1,5 @@
 import { Outlet, createRootRoute } from '@tanstack/react-router';
+import { usePageTitle } from '@/hooks/usePageTitle';
 import { Providers } from '../providers';
 
 export const Route = createRootRoute({
@@ -6,6 +7,8 @@ export const Route = createRootRoute({
 })
 
 function RootComponent() {
+  usePageTitle();
+
   return (
     <Providers>
       <Outlet />

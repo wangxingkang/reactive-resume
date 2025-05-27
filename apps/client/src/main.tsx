@@ -14,6 +14,10 @@ declare module '@tanstack/react-router' {
   interface Register {
     router: typeof router
   }
+
+  interface StaticDataRouteOption {
+    title?: string;
+  }
 }
 
 const rootElement = document.getElementById('root')!

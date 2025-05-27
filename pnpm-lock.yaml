@@ -74,6 +74,9 @@ importers:
       '@radix-ui/react-slot':
         specifier: ^1.2.3
         version: 1.2.3(@types/react@19.1.5)(react@19.1.0)
+      '@rcuse/core':
+        specifier: ^0.25.0
+        version: 0.25.0
       '@tanstack/react-router':
         specifier: ^1.120.11
         version: 1.120.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -1528,6 +1531,12 @@ packages:
       '@types/react':
         optional: true
 
+  '@rcuse/core@0.25.0':
+    resolution: {integrity: sha512-m5yZ6e91tKf7B+lR7WEHnCEw0uUI5bm5Je2QTfZPOgeissZEOaR5F1iuNMCOSRgXTfV5CvAE8q0PBhUX9prSMg==}
+
+  '@rcuse/shared@0.25.0':
+    resolution: {integrity: sha512-xFtTzoZyXuky/zg/FH+BPrE0vyvm9QIGU8TeKyb2VSfMctFfMMs/Ep57KNvWiVDV3LxPuiNBfOqHv8ZTlWZvcg==}
+
   '@rolldown/pluginutils@1.0.0-beta.9':
     resolution: {integrity: sha512-e9MeMtVWo186sgvFFJOPGy7/d2j2mZhLJIdVW0C/xDluuOvymEATqz6zKsP0ZmXGzQtqlyjz5sC1sYQUoJG98w==}
 
@@ -2231,6 +2240,9 @@ packages:
   '@yarnpkg/parsers@3.0.0-rc.46':
     resolution: {integrity: sha512-aiATs7pSutzda/rq8fnuPwTglyVwjM22bNnK2ZgjrpAjQHSSl3lztd2f9evst1W/qnC58DRz7T7QndUDumAR4Q==}
     engines: {node: '>=14.15.0'}
+
+  '@zag-js/element-size@0.61.1':
+    resolution: {integrity: sha512-gjld+nCa3VI69KPogw+IpYsISuhayU0ptepyI3EkHPYmGGzWs2ydwVMxZolxZAM7hvYPAgNalIU/vnt2OcjNRA==}
 
   '@zkochan/js-yaml@0.0.7':
     resolution: {integrity: sha512-nrUSn7hzt7J6JWgWGz78ZYI8wj+gdIJdk0Ynjpp8l+trkn58Uqsf6RYrYkEK+3X18EX+TNdtJI0WxAtc+L84SQ==}
@@ -4139,6 +4151,10 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
+  radash@12.1.0:
+    resolution: {integrity: sha512-b0Zcf09AhqKS83btmUeYBS8tFK7XL2e3RvLmZcm0sTdF1/UUlHSsjXdCcWNxe7yfmAlPve5ym0DmKGtTzP6kVQ==}
+    engines: {node: '>=14.18.0'}
+
   rambda@9.4.2:
     resolution: {integrity: sha512-++euMfxnl7OgaEKwXh9QqThOjMeta2HH001N1v4mYQzBjJBnmXBh2BCK6dZAbICFVXOFUVD3xFG0R3ZPU0mxXw==}
 
@@ -4675,6 +4691,10 @@ packages:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
     engines: {node: '>=10'}
 
+  type-fest@4.41.0:
+    resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
+    engines: {node: '>=16'}
+
   type-is@1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
@@ -4759,6 +4779,9 @@ packages:
     resolution: {integrity: sha512-Rb46I4cGGVBmjamjphe8L/UnvJD+uPPtTkNvX5mZgqdbavhI4EbgIWJiIHXJ8bc/i9EQGPRh4DwEURJ552Do0A==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
+  user-agent-data-types@0.4.2:
+    resolution: {integrity: sha512-jXep3kO/dGNmDOkbDa8ccp4QArgxR4I76m3QVcJ1aOF0B9toc+YtSXtX5gLdDTZXyWlpQYQrABr6L1L2GZOghw==}
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
@@ -6913,6 +6936,17 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.1.5
 
+  '@rcuse/core@0.25.0':
+    dependencies:
+      '@rcuse/shared': 0.25.0
+      '@zag-js/element-size': 0.61.1
+
+  '@rcuse/shared@0.25.0':
+    dependencies:
+      radash: 12.1.0
+      type-fest: 4.41.0
+      user-agent-data-types: 0.4.2
+
   '@rolldown/pluginutils@1.0.0-beta.9': {}
 
   '@rollup/pluginutils@5.1.4(rollup@4.41.1)':
@@ -7660,6 +7694,8 @@ snapshots:
     dependencies:
       js-yaml: 3.14.1
       tslib: 2.8.1
+
+  '@zag-js/element-size@0.61.1': {}
 
   '@zkochan/js-yaml@0.0.7':
     dependencies:
@@ -9690,6 +9726,8 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
+  radash@12.1.0: {}
+
   rambda@9.4.2: {}
 
   randombytes@2.1.0:
@@ -10275,6 +10313,8 @@ snapshots:
 
   type-fest@0.21.3: {}
 
+  type-fest@4.41.0: {}
+
   type-is@1.6.18:
     dependencies:
       media-typer: 0.3.0
@@ -10336,6 +10376,8 @@ snapshots:
   use-sync-external-store@1.5.0(react@19.1.0):
     dependencies:
       react: 19.1.0
+
+  user-agent-data-types@0.4.2: {}
 
   util-deprecate@1.0.2: {}
 

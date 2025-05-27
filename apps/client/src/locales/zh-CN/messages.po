@@ -17,6 +17,10 @@ msgstr ""
 msgid "Photograph by Patrick Tomasso"
 msgstr "摄影：帕特里克-托马索"
 
+#: apps/client/src/config/index.ts:3
+msgid "Reactive Resume"
+msgstr "及时简历"
+
 #: apps/client/src/routes/auth/-views/login/index.tsx:9
 msgid "Sign in to your account"
 msgstr "登录您的账号"
