@@ -3,7 +3,8 @@
 import path from 'node:path';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
-import { defineConfig, searchForWorkspaceRoot } from 'vite';
+import { TanStackRouterVite } from '@tanstack/router-plugin/vite';
+import { defineConfig, searchForWorkspaceRoot, type PluginOption } from 'vite';
 
 export default defineConfig({
   cacheDir: '../../node_modules/.vite/client',
@@ -38,7 +39,11 @@ export default defineConfig({
   },
 
   plugins: [
+    tailwindcss() as PluginOption[],
+    TanStackRouterVite({
+      target: 'react',
+      autoCodeSplitting: true
+    }),
     react(),
-    tailwindcss(),
   ],
 });
