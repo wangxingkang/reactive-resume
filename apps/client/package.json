@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@lingui/core": "^5.3.1",
+    "@lingui/detect-locale": "^5.3.1",
+    "@lingui/react": "^5.3.1",
     "@radix-ui/react-slot": "^1.2.3",
     "@tanstack/react-router": "^1.120.11",
     "class-variance-authority": "^0.7.1",

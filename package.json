@@ -5,15 +5,20 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "nx run-many -t serve"
+    "dev": "nx run-many -t serve",
+    "messages:extract": "pnpm exec lingui extract --clean --overwrite"
   },
   "devDependencies": {
     "@nx/react": "^19.8.14",
     "@nx/vite": "^19.8.14",
+    "@lingui/cli": "^5.3.1",
+    "@lingui/swc-plugin": "^5.5.2",
+    "@lingui/vite-plugin": "^5.3.1",
     "@tanstack/router-plugin": "^1.120.11",
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
     "@vitejs/plugin-react": "^4.5.0",
+    "@vitejs/plugin-react-swc": "^3.10.0",
     "nx": "^19.8.14",
     "typescript": "~5.8.3",
     "vite": "^6.3.5",

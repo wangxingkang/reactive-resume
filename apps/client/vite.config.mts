@@ -1,7 +1,8 @@
 /// <reference types='vitest' />
 
 import path from 'node:path';
-import react from '@vitejs/plugin-react';
+import { lingui } from '@lingui/vite-plugin';
+import react from '@vitejs/plugin-react-swc';
 import tailwindcss from '@tailwindcss/vite';
 import { TanStackRouterVite } from '@tanstack/router-plugin/vite';
 import { defineConfig, searchForWorkspaceRoot, type PluginOption } from 'vite';
@@ -33,7 +34,7 @@ export default defineConfig({
   optimizeDeps: {
     esbuildOptions: {
       loader: {
-        ".po": "text",
+        '.po': 'text',
       },
     },
   },
@@ -44,6 +45,9 @@ export default defineConfig({
       target: 'react',
       autoCodeSplitting: true
     }),
-    react(),
+    react({
+      plugins: [['@lingui/swc-plugin', {}]],
+    }),
+    lingui(),
   ],
 });
