@@ -1,10 +1,18 @@
 /// <reference types='vitest' />
 
-import react from "@vitejs/plugin-react";
-import { defineConfig, searchForWorkspaceRoot } from "vite";
+import path from 'node:path';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
+import { defineConfig, searchForWorkspaceRoot } from 'vite';
 
 export default defineConfig({
-  cacheDir: "../../node_modules/.vite/client",
+  cacheDir: '../../node_modules/.vite/client',
+
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 
   build: {
     sourcemap: true,
@@ -31,11 +39,6 @@ export default defineConfig({
 
   plugins: [
     react(),
+    tailwindcss(),
   ],
-
-  resolve: {
-    alias: {
-      "@/client/": `${searchForWorkspaceRoot(process.cwd())}/apps/client/src/`,
-    },
-  },
 });

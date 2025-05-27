@@ -1,7 +1,9 @@
+import { Button } from '@/components/ui/button';
+
 function App() {
   return (
     <>
-      Hello World
+      Hello World <Button variant="secondary">按钮</Button>
     </>
   )
 }
