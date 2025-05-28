@@ -1,0 +1,29 @@
+{
+  "name": "@reactive-resume/schema",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch"
+  },
+  "dependencies": {
+    "@reactive-resume/utils": "workspace:*",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "zod": "^3.25.30"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
