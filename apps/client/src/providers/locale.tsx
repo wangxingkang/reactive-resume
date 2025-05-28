@@ -6,12 +6,9 @@ import { defaultLocale, dynamicActivate } from '@/lib/lingui';
 import { messages } from '@/locales/zh-CN/messages.po';
 
 // 解决 @tanstack/react-router staticData 中无法使用 i18n 的问题
-i18n.loadAndActivate({
-  locale: defaultLocale,
-  messages
-});
+i18n.loadAndActivate({ locale: defaultLocale, messages });
 
-type Props = {
+interface Props {
   children: React.ReactNode;
 };
 

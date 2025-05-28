@@ -1,6 +1,7 @@
+import React from 'react';
 import { LocaleProvider } from './locale';
 
-type Props = {
+interface Props {
   children: React.ReactNode;
 };
 

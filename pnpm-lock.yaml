@@ -83,6 +83,9 @@ importers:
       '@rcuse/core':
         specifier: ^0.25.0
         version: 0.25.0
+      '@reactive-resume/dto':
+        specifier: workspace:*
+        version: link:../../libs/dto
       '@tanstack/react-router':
         specifier: ^1.120.11
         version: 1.120.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -129,9 +132,36 @@ importers:
 
   libs/dto:
     dependencies:
+      '@reactive-resume/schema':
+        specifier: workspace:*
+        version: link:../schema
+      '@reactive-resume/utils':
+        specifier: workspace:*
+        version: link:../utils
       nestjs-zod:
         specifier: ^4.3.1
         version: 4.3.1(zod@3.25.30)
+      zod:
+        specifier: ^3.25.30
+        version: 3.25.30
+
+  libs/schema:
+    dependencies:
+      '@paralleldrive/cuid2':
+        specifier: ^2.2.2
+        version: 2.2.2
+      '@reactive-resume/utils':
+        specifier: workspace:*
+        version: link:../utils
+      zod:
+        specifier: ^3.25.30
+        version: 3.25.30
+
+  libs/utils:
+    dependencies:
+      dayjs:
+        specifier: ^1.11.13
+        version: 1.11.13
       zod:
         specifier: ^3.25.30
         version: 3.25.30
@@ -1316,6 +1346,10 @@ packages:
       '@nestjs/swagger':
         optional: true
 
+  '@noble/hashes@1.8.0':
+    resolution: {integrity: sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==}
+    engines: {node: ^14.21.3 || >=16}
+
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -1504,6 +1538,9 @@ packages:
     resolution: {integrity: sha512-Z3llHH0jfJP4mlWq3DT7bK6qV+/vYe0+xzCgfc67+Tc/U3eYndujl880bexeGdGNPh87JeYznpZAOJ44N7QVVQ==}
     cpu: [x64]
     os: [win32]
+
+  '@paralleldrive/cuid2@2.2.2':
+    resolution: {integrity: sha512-ZOBkgDwEdoYVlSeRbYYXs0S9MejQofiVYoTbKzy/6GQa39/q5tQU2IX46+shYnUkpEl3wc+J6wRlar7r2EK2xA==}
 
   '@parcel/watcher-android-arm64@2.5.1':
     resolution: {integrity: sha512-KF8+j9nNbUN8vzOFDpRMsaKBHZ/mcjEjMToVMJOhTozkDonQFFrRcfdLWn6yWKCmJKmdVxSgHiYvTCef4/qcBA==}
@@ -2949,6 +2986,9 @@ packages:
   date-format@4.0.14:
     resolution: {integrity: sha512-39BOQLs9ZjKh0/patS9nrT8wc3ioX3/eA/zgbKNopnF2wCqJEoxywwwElATYvRsXdnOxA/OQeQoFZ3rFjVajhg==}
     engines: {node: '>=4.0'}
+
+  dayjs@1.11.13:
+    resolution: {integrity: sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==}
 
   de-indent@1.0.2:
     resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
@@ -6737,6 +6777,8 @@ snapshots:
     dependencies:
       zod: 3.25.30
 
+  '@noble/hashes@1.8.0': {}
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -7153,6 +7195,10 @@ snapshots:
 
   '@oxc-resolver/binding-win32-x64-msvc@1.12.0':
     optional: true
+
+  '@paralleldrive/cuid2@2.2.2':
+    dependencies:
+      '@noble/hashes': 1.8.0
 
   '@parcel/watcher-android-arm64@2.5.1':
     optional: true
@@ -8611,6 +8657,8 @@ snapshots:
   date-fns@3.6.0: {}
 
   date-format@4.0.14: {}
+
+  dayjs@1.11.13: {}
 
   de-indent@1.0.2: {}
 

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@reactive-resume/dto": "workspace:*",
     "@hookform/resolvers": "^5.0.1",
     "@lingui/core": "^5.3.1",
     "@lingui/detect-locale": "^5.3.1",
