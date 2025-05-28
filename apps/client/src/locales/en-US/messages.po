@@ -13,14 +13,24 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: apps/client/src/routes/auth/-views/login/index.tsx:21
+msgctxt "This is a link to create a new account"
+msgid "Create one now"
+msgstr "Create one now"
+
+#: apps/client/src/routes/auth/-views/login/index.tsx:17
+msgid "Don't have an account?"
+msgstr "Don't have an account?"
+
 #: apps/client/src/routes/auth/_layout.tsx:31
 msgid "Photograph by Patrick Tomasso"
 msgstr "Photograph by Patrick Tomasso"
 
-#: apps/client/src/config/index.ts:3
+#: apps/client/src/utils/title.ts:4
 msgid "Reactive Resume"
 msgstr "Reactive Resume"
 
-#: apps/client/src/routes/auth/-views/login/index.tsx:9
+#: apps/client/src/routes/auth/_layout/login.tsx:7
+#: apps/client/src/routes/auth/-views/login/index.tsx:13
 msgid "Sign in to your account"
 msgstr "Sign in to your account"
