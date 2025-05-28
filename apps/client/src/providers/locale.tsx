@@ -3,11 +3,13 @@ import { i18n } from '@lingui/core';
 import { detect, fromStorage, fromUrl } from '@lingui/detect-locale';
 import { I18nProvider } from '@lingui/react';
 import { defaultLocale, dynamicActivate } from '@/lib/lingui';
-// @ts-expect-error
-import { messages as zhMessages } from '@/locales/zh-CN/messages.po';
+import { messages } from '@/locales/zh-CN/messages.po';
 
-i18n.load(defaultLocale, zhMessages);
-i18n.activate(defaultLocale);
+// 解决 @tanstack/react-router staticData 中无法使用 i18n 的问题
+i18n.loadAndActivate({
+  locale: defaultLocale,
+  messages
+});
 
 type Props = {
   children: React.ReactNode;
