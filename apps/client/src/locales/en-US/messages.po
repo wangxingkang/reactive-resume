@@ -13,14 +13,30 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: apps/client/src/routes/auth/-views/login/index.tsx:21
+#: apps/client/src/routes/auth/-views/login/index.tsx:55
 msgctxt "This is a link to create a new account"
 msgid "Create one now"
 msgstr "Create one now"
 
-#: apps/client/src/routes/auth/-views/login/index.tsx:17
+#: apps/client/src/routes/auth/-views/login/index.tsx:51
 msgid "Don't have an account?"
 msgstr "Don't have an account?"
+
+#: apps/client/src/routes/auth/-views/login/index.tsx:74
+msgid "Email"
+msgstr "Email"
+
+#: apps/client/src/routes/auth/-views/login/index.tsx:119
+msgid "Forgot Password?"
+msgstr "Forgot Password?"
+
+#: apps/client/src/routes/auth/-views/login/index.tsx:103
+msgid "Hold <0>Ctrl</0> to display your password temporarily."
+msgstr "Hold <0>Ctrl</0> to display your password temporarily."
+
+#: apps/client/src/routes/auth/-views/login/index.tsx:94
+msgid "Password"
+msgstr "Password"
 
 #: apps/client/src/routes/auth/_layout.tsx:31
 msgid "Photograph by Patrick Tomasso"
@@ -30,7 +46,15 @@ msgstr "Photograph by Patrick Tomasso"
 msgid "Reactive Resume"
 msgstr "Reactive Resume"
 
+#: apps/client/src/routes/auth/-views/login/index.tsx:115
+msgid "Sign in"
+msgstr "Sign in"
+
 #: apps/client/src/routes/auth/_layout/login.tsx:7
-#: apps/client/src/routes/auth/-views/login/index.tsx:13
+#: apps/client/src/routes/auth/-views/login/index.tsx:47
 msgid "Sign in to your account"
 msgstr "Sign in to your account"
+
+#: apps/client/src/routes/auth/-views/login/index.tsx:83
+msgid "You can also enter your username."
+msgstr "You can also enter your username."
