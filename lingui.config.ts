@@ -14,6 +14,7 @@ export default defineConfig({
     {
       include: ['<rootDir>/apps/client/src'],
       path: '<rootDir>/apps/client/src/locales/{locale}/messages',
+      exclude: ['**/*.d.ts'],
     },
   ],
 })

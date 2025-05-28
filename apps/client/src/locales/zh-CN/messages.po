@@ -13,28 +13,28 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: apps/client/src/routes/auth/-views/login/index.tsx:55
+#: apps/client/src/routes/auth/-views/login/index.tsx:57
 msgctxt "This is a link to create a new account"
 msgid "Create one now"
 msgstr "立刻创建"
 
-#: apps/client/src/routes/auth/-views/login/index.tsx:51
+#: apps/client/src/routes/auth/-views/login/index.tsx:53
 msgid "Don't have an account?"
 msgstr "还没有账户？"
 
-#: apps/client/src/routes/auth/-views/login/index.tsx:74
+#: apps/client/src/routes/auth/-views/login/index.tsx:76
 msgid "Email"
 msgstr "电子邮件"
 
-#: apps/client/src/routes/auth/-views/login/index.tsx:119
+#: apps/client/src/routes/auth/-views/login/index.tsx:121
 msgid "Forgot Password?"
 msgstr "忘记密码？"
 
-#: apps/client/src/routes/auth/-views/login/index.tsx:103
+#: apps/client/src/routes/auth/-views/login/index.tsx:105
 msgid "Hold <0>Ctrl</0> to display your password temporarily."
 msgstr "按住<0>Ctrl</0>可暂时显示您的密码。"
 
-#: apps/client/src/routes/auth/-views/login/index.tsx:94
+#: apps/client/src/routes/auth/-views/login/index.tsx:96
 msgid "Password"
 msgstr "密码"
 
@@ -46,15 +46,15 @@ msgstr "摄影：帕特里克-托马索"
 msgid "Reactive Resume"
 msgstr "及时简历"
 
-#: apps/client/src/routes/auth/-views/login/index.tsx:115
+#: apps/client/src/routes/auth/-views/login/index.tsx:117
 msgid "Sign in"
 msgstr "登录"
 
 #: apps/client/src/routes/auth/_layout/login.tsx:7
-#: apps/client/src/routes/auth/-views/login/index.tsx:47
+#: apps/client/src/routes/auth/-views/login/index.tsx:49
 msgid "Sign in to your account"
 msgstr "登录您的账号"
 
-#: apps/client/src/routes/auth/-views/login/index.tsx:83
+#: apps/client/src/routes/auth/-views/login/index.tsx:85
 msgid "You can also enter your username."
 msgstr "您还可以输入您的用户名。"
