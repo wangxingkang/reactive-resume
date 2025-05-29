@@ -18,10 +18,12 @@ import {
   FormMessage,
   FormDescription,
 } from '@/components/ui/form';
+import { useLogin } from '@/services/auth';
 
 type FormValues = z.infer<typeof loginSchema>;
 
 function Login() {
+  const { login, loading } = useLogin();
   const { t } = useLingui();
   const formRef = useRef<HTMLFormElement>(null);
   usePasswordToggle(formRef);
@@ -36,7 +38,7 @@ function Login() {
 
   const onSubmit = async (data: FormValues) => {
     try {
-      console.log(data);
+      await login(data);
     } catch {
       form.reset();
     }
@@ -113,7 +115,7 @@ function Login() {
             />
 
             <div className="flex mt-4 items-center gap-x-4">
-              <Button type="submit" className="flex-1">
+              <Button type="submit" disabled={loading} className="flex-1">
                 {t`Sign in`}
               </Button>
 
