@@ -2,6 +2,7 @@ import { idSchema } from '@reactive-resume/schema';
 import { dateSchema } from '@reactive-resume/utils';
 import { createZodDto } from 'nestjs-zod/dto';
 import { z } from 'zod';
+import { secretsSchema } from '../secrets';
 
 export const usernameSchema = z
   .string()
@@ -29,4 +30,10 @@ export const userSchema = z.object({
   updateAt: dateSchema,
 });
 
-export class UserDto extends createZodDto(userSchema) {}
+export class UserDto extends createZodDto(userSchema) {};
+
+export const userWithSecretsSchema = userSchema.merge(
+  z.object({ secrets: secretsSchema.nullable().default(null) }),
+);
+
+export class UserWithSecrets extends createZodDto(userWithSecretsSchema) {};
