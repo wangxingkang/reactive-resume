@@ -29,6 +29,13 @@ export default defineConfig({
     host: true,
     port: 8888,
     fs: { allow: [searchForWorkspaceRoot(process.cwd())] },
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    }
   },
 
   optimizeDeps: {
